@@ -13,22 +13,28 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.black,
         body: SafeArea(
-          child: Column(
-            children: [
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.yellow[400],
-                child: Text("Container 1"),
+            child: Column(
+          children: [
+            Center(
+              child: CircleAvatar(
+                radius: 100.0,
+                backgroundColor: Colors.amber[600],
+                foregroundImage: AssetImage('images/tarun.jpg'),
               ),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.yellow[900],
+            ),
+            Container(
+              child: Text(
+                'Tarun Vignesh Selvabalaji',
+                style: TextStyle(
+                  fontFamily: LobsterTwo,
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.amber[600],
+                ),
               ),
-            ],
-          ),
-        ),
+            ),
+          ],
+        )),
       ),
     );
   }
