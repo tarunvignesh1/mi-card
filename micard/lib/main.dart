@@ -24,12 +24,23 @@ class MyApp extends StatelessWidget {
             ),
             Container(
               child: Text(
-                'Tarun Vignesh Selvabalaji',
+                'Tarun Vignesh',
                 style: TextStyle(
-                  fontFamily: LobsterTwo,
-                  fontSize: 20.0,
+                  fontFamily: 'LobsterTwo',
+                  fontSize: 40.0,
                   fontWeight: FontWeight.bold,
                   color: Colors.amber[600],
+                ),
+              ),
+            ),
+            Container(
+              child: Text(
+                'SOFTWARE DEVELOPER',
+                style: TextStyle(
+                  fontFamily: 'SourceCodePro',
+                  fontSize: 20.0,
+                  color: Colors.amber[400],
+                  letterSpacing: 2.5,
                 ),
               ),
             ),

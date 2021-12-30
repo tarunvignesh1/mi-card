@@ -65,6 +65,9 @@ flutter:
     - family: LobsterTwo
       fonts:
         - asset: fonts/LobsterTwo-Regular.ttf
+    - family: SourceCodePro
+      fonts:
+        - asset: fonts/SourceCodePro-Regular.ttf
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
