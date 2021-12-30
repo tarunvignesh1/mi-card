@@ -11,20 +11,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
             children: [
               Container(
                 height: 100,
                 width: 100,
-                color: Colors.red[100],
+                color: Colors.yellow[400],
                 child: Text("Container 1"),
               ),
               Container(
                 height: 100,
                 width: 100,
-                color: Colors.black,
+                color: Colors.yellow[900],
               ),
             ],
           ),
