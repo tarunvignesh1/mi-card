@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -33,6 +35,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
+            // ignore: avoid_unnecessary_containers
             Container(
               child: Text(
                 'SOFTWARE DEVELOPER',
@@ -45,9 +48,11 @@ class MyApp extends StatelessWidget {
               ),
             ),
 
+            // ignore: prefer_const_constructors
             SizedBox(
               height: 20.0,
               width: 200.0,
+              // ignore: prefer_const_constructors
               child: Divider(
                 color: Colors.amber,
               ),
@@ -55,7 +60,9 @@ class MyApp extends StatelessWidget {
             //Container for phone contact details
             Card(
               color: Colors.amber[400],
+              // ignore: prefer_const_constructors
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+              // ignore: prefer_const_constructors
               child: ListTile(
                 leading: Icon(
                   Icons.call,
