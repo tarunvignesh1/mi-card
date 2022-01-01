@@ -15,12 +15,10 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
             child: Column(
           children: [
-            Center(
-              child: CircleAvatar(
-                radius: 100.0,
-                backgroundColor: Colors.amber[600],
-                foregroundImage: AssetImage('images/tarun.jpg'),
-              ),
+            CircleAvatar(
+              radius: 100.0,
+              backgroundColor: Colors.amber[600],
+              foregroundImage: AssetImage('images/tarun.jpg'),
             ),
             Container(
               child: Text(
@@ -44,6 +42,50 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
+            //Container for phone contact details
+            Container(
+              color: Colors.amber[200],
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+              padding: EdgeInsets.all(10.0),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.call,
+                    color: Colors.black,
+                    size: 30.0,
+                  ),
+                  SizedBox(
+                    width: 20.0,
+                  ),
+                  Text(
+                    '+91 7530039227',
+                    style: TextStyle(color: Colors.black, fontSize: 20.0),
+                  ),
+                ],
+              ),
+            ),
+            //Container for email contact details
+            Container(
+              color: Colors.amber[200],
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+              padding: EdgeInsets.all(10.0),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.email,
+                    color: Colors.black,
+                    size: 30.0,
+                  ),
+                  SizedBox(
+                    width: 20.0,
+                  ),
+                  Text(
+                    'tarunvignesh1@gmail.com',
+                    style: TextStyle(color: Colors.black, fontSize: 20.0),
+                  ),
+                ],
+              ),
+            )
           ],
         )),
       ),
