@@ -10,10 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.black,
         body: SafeArea(
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 100.0,
@@ -42,50 +44,46 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
+
+            SizedBox(
+              height: 20.0,
+              width: 200.0,
+              child: Divider(
+                color: Colors.amber,
+              ),
+            ),
             //Container for phone contact details
-            Container(
-              color: Colors.amber[200],
+            Card(
+              color: Colors.amber[400],
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-              padding: EdgeInsets.all(10.0),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.call,
-                    color: Colors.black,
-                    size: 30.0,
-                  ),
-                  SizedBox(
-                    width: 20.0,
-                  ),
-                  Text(
-                    '+91 7530039227',
-                    style: TextStyle(color: Colors.black, fontSize: 20.0),
-                  ),
-                ],
+              child: ListTile(
+                leading: Icon(
+                  Icons.call,
+                  color: Colors.black,
+                  size: 30.0,
+                ),
+                title: Text(
+                  '+91 7530039227',
+                  style: TextStyle(color: Colors.black, fontSize: 20.0),
+                ),
               ),
             ),
             //Container for email contact details
-            Container(
-              color: Colors.amber[200],
+            Card(
+              color: Colors.amber[400],
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-              padding: EdgeInsets.all(10.0),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.email,
-                    color: Colors.black,
-                    size: 30.0,
-                  ),
-                  SizedBox(
-                    width: 20.0,
-                  ),
-                  Text(
-                    'tarunvignesh1@gmail.com',
-                    style: TextStyle(color: Colors.black, fontSize: 20.0),
-                  ),
-                ],
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Colors.black,
+                  size: 30.0,
+                ),
+                title: Text(
+                  'tarunvignesh1@gmail.com',
+                  style: TextStyle(color: Colors.black, fontSize: 20.0),
+                ),
               ),
-            )
+            ),
           ],
         )),
       ),
